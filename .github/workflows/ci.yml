@@ -37,7 +37,7 @@ jobs:
 
       - name: Test
         run: |
-          dotnet test --no-build -c Release -f net8.0 --verbosity normal
+          dotnet test tests/PasswordForge.Tests/PasswordForge.Tests.csproj --no-build -c Release -f net8.0 --verbosity normal
           dotnet test --no-build -c Release -f net9.0 --verbosity normal
 
   publish:
