@@ -10,9 +10,9 @@
 
 **Target frameworks:** `net8.0` · `net9.0` · **Language:** C# · **Test runner:** xUnit
 
-**PasswordForge generates passwords that satisfy your policy, not just random strings.**
+**PasswordForge is a policy-aware password generator for .NET.**
 
-PasswordForge is a policy-aware password generator and password-policy test kit for .NET. Most generators produce a random string and hope it fits. PasswordForge starts with the policy your application must satisfy, then generates, validates, explains, and tests against that policy.
+PasswordForge is a policy-aware password generator and password-policy test kit for .NET. Most password generators produce a random string and hope it fits. PasswordForge starts with the policy your application must satisfy, then generates, validates, explains, and tests against that policy.
 
 PasswordForge does **not** store, hash, deliver, or reset passwords. It is not an identity system.
 

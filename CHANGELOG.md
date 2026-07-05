@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- NuGet search metadata: `Title` set to Password Generator, description and tags optimised for password generator discovery.
 - NuGet search tags include `password generator`.
 
 ## [1.0.2] - 2026-07-05
