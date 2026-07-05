@@ -65,6 +65,7 @@ jobs:
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
           dotnet pack src/PasswordForge/PasswordForge.csproj -c Release -o ./artifacts -p:Version="$VERSION"
+          dotnet pack src/PasswordForge.McpServer/PasswordForge.McpServer.csproj -c Release -o ./artifacts -p:Version="$VERSION"
 
       - name: NuGet login (OIDC)
         id: login

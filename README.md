@@ -294,6 +294,35 @@ var result = forge.Generate(policy);
 
 Deterministic generation is isolated under `PasswordForge.Testing` and uses predictable randomness unsuitable for real credentials.
 
+## MCP server
+
+`PasswordForge.McpServer` is an optional stdio MCP server for AI agents. It exposes policy validation, review, generation metadata, and test-set summaries.
+
+**Password values are never returned** in MCP tool responses. `validate_password` sends a password in the request for checking; it is not echoed back but may appear in MCP client logs.
+
+```bash
+dotnet run --project src/PasswordForge.McpServer
+```
+
+Cursor / Claude Desktop config:
+
+```json
+{
+  "mcpServers": {
+    "passwordforge": {
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "/absolute/path/to/PasswordForge/src/PasswordForge.McpServer"
+      ]
+    }
+  }
+}
+```
+
+See [src/PasswordForge.McpServer/README.md](src/PasswordForge.McpServer/README.md) for tool list and details.
+
 ## Security notes
 
 - Production randomness uses `RandomNumberGenerator` from `System.Security.Cryptography`.

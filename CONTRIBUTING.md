@@ -41,6 +41,8 @@ src/PasswordForge/              # Library
   Identity/                     # ASP.NET Identity adapter
   Testing/                      # Deterministic test-only API
 tests/PasswordForge.Tests/      # xUnit tests (net8.0 and net9.0)
+tests/PasswordForge.McpServer.Tests/  # MCP redaction tests
+src/PasswordForge.McpServer/    # Optional stdio MCP server
 samples/                        # Console and ASP.NET Core samples
 ```
 
