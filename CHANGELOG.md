@@ -5,11 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2026-07-05
+
+### Added
+
+- `PasswordForge.McpServer` stdio MCP server with policy validation, review, and redacted generation metadata.
+- CI publishes `PasswordForge` and `PasswordForge.McpServer` to NuGet on release tags.
+
+### Changed
+
+- NuGet search metadata: `Title` set to Password Generator, description and tags optimised for password generator discovery.
+- NuGet search tags include `password generator`.
+
+## [1.0.2] - 2026-07-05
+
+### Changed
+
+- Expanded NuGet package description and search tags for OWASP and NIST-aligned visibility.
+
 ## [1.0.1] - 2026-07-05
 
 ### Changed
 
-- Expanded NuGet package description and search tags, including OWASP and NIST-aligned terms.
+- Additional NuGet search tags for password and security-related discovery.
 
 ## [1.0.0] - 2026-07-05
 

@@ -37,13 +37,20 @@ Create a GitHub environment named **`release`** if you use environment protectio
 
 ### 4. Publish a release
 
-1. Ensure `Version` in `src/PasswordForge/PasswordForge.csproj` matches the tag (e.g. `1.0.0`)
+1. Ensure `Version` in both project files matches the tag:
+   - `src/PasswordForge/PasswordForge.csproj`
+   - `src/PasswordForge.McpServer/PasswordForge.McpServer.csproj`
 2. Commit and push to `main`
 3. Create and push a version tag:
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.0.3
+git push origin v1.0.3
 ```
 
-The `publish` job packs with the tag version (without the `v` prefix) and pushes `.nupkg` and `.snupkg` to NuGet.org.
+The `publish` job packs both packages with the tag version (without the `v` prefix) and pushes `.nupkg` and `.snupkg` to NuGet.org:
+
+- `PasswordForge` (library)
+- `PasswordForge.McpServer` (.NET global tool, command `passwordforge-mcp`)
+
+Add a trusted publishing policy for each package ID on nuget.org if required.

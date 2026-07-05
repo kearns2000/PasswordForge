@@ -37,7 +37,7 @@ jobs:
 
       - name: Test
         run: |
-          dotnet test --no-build -c Release -f net8.0 --verbosity normal
+          dotnet test tests/PasswordForge.Tests/PasswordForge.Tests.csproj --no-build -c Release -f net8.0 --verbosity normal
           dotnet test --no-build -c Release -f net9.0 --verbosity normal
 
   publish:
@@ -65,6 +65,7 @@ jobs:
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
           dotnet pack src/PasswordForge/PasswordForge.csproj -c Release -o ./artifacts -p:Version="$VERSION"
+          dotnet pack src/PasswordForge.McpServer/PasswordForge.McpServer.csproj -c Release -o ./artifacts -p:Version="$VERSION"
 
       - name: NuGet login (OIDC)
         id: login
