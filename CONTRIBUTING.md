@@ -4,7 +4,7 @@ Thanks for your interest in contributing. PasswordForge is a focused library for
 
 ## Before you start
 
-- Search [existing issues](https://github.com/PKSoftLibs/PasswordForge/issues) to avoid duplicate work.
+- Search [existing issues](https://github.com/kearns2000/PasswordForge/issues) to avoid duplicate work.
 - For large changes (new policy rules, API changes, architecture), open an issue first to discuss approach.
 - Keep pull requests focused. One feature or fix per PR is easier to review.
 
@@ -16,7 +16,7 @@ Thanks for your interest in contributing. PasswordForge is a focused library for
 ## Getting started
 
 ```bash
-git clone https://github.com/PKSoftLibs/PasswordForge.git
+git clone https://github.com/kearns2000/PasswordForge.git
 cd PasswordForge
 dotnet build -c Release
 dotnet test -c Release -f net8.0
@@ -107,4 +107,4 @@ Add tests when you:
 
 ## Questions
 
-Open a [GitHub issue](https://github.com/PKSoftLibs/PasswordForge/issues) for questions or ideas.
+Open a [GitHub issue](https://github.com/kearns2000/PasswordForge/issues) for questions or ideas.

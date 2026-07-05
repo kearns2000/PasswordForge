@@ -1,10 +1,10 @@
-![PasswordForge](https://raw.githubusercontent.com/PKSoftLibs/PasswordForge/main/assets/icon.png)
+![PasswordForge](https://raw.githubusercontent.com/kearns2000/PasswordForge/main/assets/icon.png)
 
 # PasswordForge
 
 [![NuGet](https://img.shields.io/nuget/v/PasswordForge?style=flat&logo=nuget)](https://www.nuget.org/packages/PasswordForge)
 [![.NET](https://img.shields.io/badge/.NET-8.0%20%7C%209.0-512BD4?style=flat&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/download)
-[![Build](https://github.com/PKSoftLibs/PasswordForge/actions/workflows/ci.yml/badge.svg)](https://github.com/PKSoftLibs/PasswordForge/actions/workflows/ci.yml)
+[![Build](https://github.com/kearns2000/PasswordForge/actions/workflows/ci.yml/badge.svg)](https://github.com/kearns2000/PasswordForge/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-xUnit-5C2D91?style=flat&logo=xunit)](tests/PasswordForge.Tests)
 
@@ -346,7 +346,7 @@ Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, pro
 Quick start for contributors:
 
 ```bash
-git clone https://github.com/PKSoftLibs/PasswordForge.git
+git clone https://github.com/kearns2000/PasswordForge.git
 cd PasswordForge
 dotnet build -c Release
 dotnet test -c Release -f net8.0

@@ -14,7 +14,7 @@ PasswordForge uses [NuGet trusted publishing](https://learn.microsoft.com/en-us/
 |-------|-------|
 | Policy name | `passwordforge` (or any label) |
 | Package owner | Your nuget.org account |
-| Repository owner | `PKSoftLibs` |
+| Repository owner | `kearns2000` |
 | Repository | `PasswordForge` |
 | Workflow file | `ci.yml` |
 | Environment | `release` |
